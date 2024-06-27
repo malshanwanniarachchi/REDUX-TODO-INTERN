@@ -49,9 +49,9 @@ const Todo = () => {
         </button>
       </div>
 
-      {/* <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
+       <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
         <FilterButtons />
-        <div className="flex items-center mb-4">
+        {/* <div className="flex items-center mb-4">
           <input
             className="flex-grow p-2 border-b-2 border-gray-300 focus:outline-none focus:border-blue-500"
             type="text"
@@ -62,8 +62,8 @@ const Todo = () => {
           <button className="p-2 ml-4 text-white bg-blue-500 rounded hover:bg-blue-600 focus:outline-none">
             <BsSearch size={20} />
           </button>
-        </div>
-      </div> */}
+        </div> */}
+      </div>
 
       <TodoList />
     </div>
