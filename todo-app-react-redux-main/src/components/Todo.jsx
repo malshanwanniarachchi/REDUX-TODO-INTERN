@@ -30,7 +30,7 @@ const Todo = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto sm:mt-8 p-4 bg-gray-100 rounded">
+    <div className="max-w-4xl p-4 mx-auto bg-gray-100 rounded sm:mt-8">
       <h2 className='mt-3 mb-6 text-2xl font-bold text-center uppercase'>Personal TODO APP</h2>
       <div className="flex items-center mb-4">
         <input
@@ -42,14 +42,14 @@ const Todo = () => {
           onChange={(e) => setNewTodoText(e.target.value)}
         />
         <button
-          className="ml-4 p-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none"
+          className="p-2 ml-4 text-white bg-blue-500 rounded hover:bg-blue-600 focus:outline-none"
           onClick={handleAddTodoClick}
         >
           <BsPlus size={20} />
         </button>
       </div>
 
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+      {/* <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
         <FilterButtons />
         <div className="flex items-center mb-4">
           <input
@@ -59,11 +59,11 @@ const Todo = () => {
             value={searchTerm}
             onChange={(e) => handleSearchChange(e.target.value)}
           />
-          <button className="ml-4 p-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none">
+          <button className="p-2 ml-4 text-white bg-blue-500 rounded hover:bg-blue-600 focus:outline-none">
             <BsSearch size={20} />
           </button>
         </div>
-      </div>
+      </div> */}
 
       <TodoList />
     </div>

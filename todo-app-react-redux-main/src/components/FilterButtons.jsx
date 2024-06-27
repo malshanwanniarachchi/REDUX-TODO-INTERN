@@ -12,9 +12,9 @@ const FilterButtons = () => {
   };
 
   return (
-    <div className="flex space-x-4 items-center">
+    <div className="flex items-center space-x-4">
       <select
-        className="text-sm px-2 py-1 rounded border border-gray-300 focus:outline-none"
+        className="px-2 py-1 text-sm border border-gray-300 rounded focus:outline-none"
         value={currentFilter}
         onChange={(e) => handleFilter(e.target.value)}
       >
@@ -24,9 +24,10 @@ const FilterButtons = () => {
       </select>
 
       <button
-        className="text-sm px-2 py-1 bg-purple-500 text-white rounded ml-2"
-        onClick={() => dispatch(markAllCompleted())}
-      >
+  className="px-2 py-1 ml-2 text-sm text-white bg-red-500 rounded"
+  onClick={() => dispatch(markAllCompleted())}
+>
+
         Mark All Completed
       </button>
     </div>
